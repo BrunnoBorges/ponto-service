@@ -1,0 +1,3 @@
+URL de acesso ao mongo cloud : mongodb+srv://brunnoborges:409603@cluster0.iyzix.mongodb.net/test
+
+URL de acesso ao mongo: mongodb+srv://brunnoborges:409603@cluster0.iyzix.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
