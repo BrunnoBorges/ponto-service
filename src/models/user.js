@@ -17,6 +17,15 @@ const UserSchema = new mongoose.Schema({
         require: true,
         select: false
     },
+    confirmPassword: {
+        type: String,
+        require: true,
+        select: false
+    },
+    cpf: {
+        type: String,
+        require: true
+    },
     createdAt: {
         type: Date,
         default: Date.now

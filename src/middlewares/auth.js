@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
-const authConfig = require('../config/auth.json')
+const authConfig = require('../config/auth.json');
+
 
 module.exports = (req, res, next) => {
     const authHeader = req.headers.authorization;
@@ -13,11 +14,11 @@ module.exports = (req, res, next) => {
     if(!parts.length === 2) 
         return res.status(401).send({error: 'O Token inválido'});
     
-    
+
     const [ scheme, token ] = parts;
 
     if(!/^Bearer$/i.test(scheme)) {
-        console.log('----------->', scheme)
+        // console.log('----------->', scheme)
         res.status(401).send({error: 'Token mal formado'});
     }
     
